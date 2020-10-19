@@ -1,0 +1,148 @@
+html {
+    background: url("../2019/thomas.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+    position: absolute;
+    top: 11em;
+    right: 13em;
+    font-family: sans-serif;
+    font-size: 3em;
+    /* color: orange; */
+    animation: blinkingText 1s infinite;
+}
+@keyframes blinkingText{ 0%{ color: violet; } 12.5%{ color: indigo; } 25%{ color: blue;} 37.5%{ color: green} 50%{ color: yellow} 62.5%{ color: orange} 75%{ color: red} 100%{ color: violet}}
+
+/*
+h3 {
+    position: absolute;
+    top: 7em;
+    right: 0;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    transform: rotate(30deg);
+    animation: blinkingText 0.5s infinite;
+} */
+
+.date {
+    position: absolute;
+    top: 6em;
+    right: 4em;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    transform: rotate(30deg);
+    animation: blinkingText 0.5s infinite;
+}
+
+.loc {
+    position: absolute;
+    top: 7em;
+    right: 5em;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    transform: rotate(30deg);
+    animation: blinkingText 0.5s infinite;
+}
+
+.time {
+    position: absolute;
+    top: 7em;
+    right: 10em;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    transform: rotate(30deg);
+    animation: blinkingText 0.5s infinite;
+}
+
+img {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+}
+
+img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.happy {
+    position: absolute;
+    top: 2em;
+    right: 5em;
+    width: 10%;
+    transform: rotate(30deg);
+}
+
+.bois {
+    position: absolute;
+    right: 10em;
+    top: 42em;
+    width: 500px;
+    transform: rotate(20deg);
+}
+
+.birb {
+    position: absolute;
+    width: 300px;
+}
+
+.looking {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 40em;
+    right: 50em;
+}
+
+.dank {
+    position: absolute;
+    top: 50em;
+    transform: rotate(-20deg);
+}
+
+.shaggy {
+    position: absolute;
+    right: 7em;
+    top: 15em;
+    width: 500px;
+    transform: rotate(30deg);
+}
+
+.prawn {
+    position: absolute;
+    top: 14em;
+    right: 45em;
+    width: 10%;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+button {
+    position: absolute;
+    top: 40em;
+    right: 85em;
+    background-color: #FFFFFF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: black;
+    border-radius: 0.5em;
+    transform: rotate(15deg);
+}

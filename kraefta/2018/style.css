@@ -1,0 +1,120 @@
+body {
+    background-color: yellow;
+}
+
+.meme1 {
+    display: flex;
+    justify-content: center;
+}
+
+.knuckles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: black;
+}
+
+.header h1 {
+    color: white;
+    text-align: center;
+}
+
+.meme2 {
+    justify-content: flex-end;
+}
+
+.meme3 {
+    margin-left: auto;
+}
+
+.meme1 img, .meme2 img, .meme3 img {
+    width: 350px;
+    height: 350px;
+}
+
+.slide-right {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-right p {
+    animation: 6s slide-right infinite;
+    font-size: 30px;
+    color: blue;
+}
+
+.slide-left {
+    z-index: -1;
+    width: 100%;
+    align-self: center;
+}
+
+.slide-left img{
+    -webkit-animation: 2s slide-left infinite linear;
+}
+
+.left {
+    animation: 6s left infinite;
+    font-size: 30px;
+    color: blue;
+}
+
+.speeddate {
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.row1, .row2  {
+    display: flex;
+}
+
+.row2 {
+    justify-content: space-between;
+}
+
+.person {
+    margin-top: 100px;
+}
+
+.desc {
+    width: 150px;
+    height: 150px;
+    overflow: auto;
+}
+
+.roland {
+    align-self: flex-end;
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: 0%;
+        width: 300%;
+    }
+    to {
+         margin-left: 100%;
+         width: 100%;
+    }
+}
+
+@-webkit-keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+    to {
+         margin-left: -20%;
+    }
+}
+
+@keyframes left {
+    from {
+        margin-left: 100%;
+    }
+    to {
+         margin-left: -50% ;
+    }
+}
