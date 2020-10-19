@@ -1,0 +1,188 @@
+html {
+    background: url("https://assets.partyking.org/img/products/1300/girlang-kraftor-1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+    position: absolute;
+    top: 1em;
+    right: 4em;
+    font-family: sans-serif;
+    font-size: 3em;
+    /* color: orange; */
+    animation: blinkingText2 1s infinite;
+}
+
+h2 {
+    position: absolute;
+    top: 15em;
+    right: 15em;
+    font-family: sans-serif;
+    font-size: 3em;
+    /* color: orange; */
+    animation: blinkingText 1s infinite;
+}
+@keyframes blinkingText{ 0%{ color: violet; } 25%{ color: yellow} 75%{ color: orange} 100%{ color: red} }
+
+@keyframes blinkingText2{ 0%{ color: violet; } 20%{ color: indigo; } 60%{ color: blue;} 100%{ color: violet} }
+
+@keyframes blinkingText3{ 0%{ color: violet; } 30%{ color: violet; } 75%{ color: indigo;} 100%{ color: blue} }
+
+
+h3 {
+    position: absolute;
+    top: 7em;
+    right: 0;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    transform: rotate(30deg);
+    animation: blinkingText3 1s infinite;
+}
+
+.date {
+    position: absolute;
+    top: 6em;
+    right: 4em;
+    font-family: sans-serif;
+    font-size: 2em;
+    transform: rotate(20deg);
+}
+
+.loc {
+    position: absolute;
+    top: 7em;
+    right: 6.5em;
+    font-family: sans-serif;
+    font-size: 2em;
+    transform: rotate(20deg);
+}
+
+.time {
+    position: absolute;
+    top: 8.5em;
+    right: 6.9em;
+    font-family: sans-serif;
+    font-size: 2em;
+    transform: rotate(20deg);
+}
+
+h4 {
+    position: absolute;
+    top: 20em;
+    right: 2em;
+    font-family: sans-serif;
+    font-size: 4em;
+    /* color: black; */
+}
+
+h5 {
+    position: absolute;
+    top: 25em;
+    right: 6em;
+    font-family: sans-serif;
+    font-size: 5em;
+    /* color: black; */
+}
+
+h6 {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-family: sans-serif;
+    font-size: 5em;
+    /* color: red; */
+}
+
+.Familjen {
+    position: absolute;
+    right: 42em;
+    top: 20em;
+	width: 550px;
+
+}
+
+.Joy {
+    position: absolute;
+    right: 3.6em;
+    top: 46em;
+
+}
+
+.Bild3 {
+    position: absolute;
+    right: 8em;
+    top: 92em;
+    width: 1000px;
+
+}
+
+.GIF1 {
+    position: absolute;
+    right: 42em;
+    top: 160em;
+	width: 550px;
+
+}
+
+.Bild4 {
+    position: absolute;
+    right: 55em;
+    top: 65em;
+	width: 300px;
+
+}
+
+.Bild5 {
+    position: absolute;
+    right: 15em;
+    top: 175em;
+	width: 550px;
+
+}
+
+.Bild6 {
+    position: absolute;
+    right: 50em;
+    top: 180em;
+	width: 400px;
+
+}
+
+.Bild7 {
+    position: absolute;
+    right: 10em;
+    top: 150em;
+	width: 550px;
+
+}
+
+.Bild8 {
+    position: absolute;
+    right: 10em;
+    top: 200em;
+	width: 550px;
+
+}
+
+.Bild9 {
+    position: absolute;
+    right: 25em;
+    top: 220em;
+	width: 550px;
+
+}
+
+h7 {
+    position: absolute;
+    top: 130em;
+    right: 4em;
+    font-family: sans-serif;
+    font-size: 2em;
+    /* color: black; */
+}
+
+
+

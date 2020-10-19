@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+body {
+  background-color: rgb(5, 118, 0);
+}
+
+h1 {
+  color: Yellow;
+  background-color: Aqua;
+  font-size: 350%;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(8, 124, 1);
+  text-align: right;
+}
+
+img.Brace {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.flash {
+   animation-name: flash;
+    animation-duration: 0.05s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: white;}
+    to {color: rgb(8, 124, 1);}
+}
+
+.parent {
+  font-family: "Rock Salt";
+  font-size: 35px;
+  text-align: center;
+}
+
+.lefty {
+  width: 50%;
+  float: left;
+}
+
+.pic {
+  width: 33%;
+  float: left;
+}
+
+.pic img {
+  display: block;
+  margin: auto;
+}
+
+.datum {
+  font-family: "Rock Salt";
+  font-size: 75px;
+  text-align: center;
+}
+
+.punsch {
+  display: block;
+}
+
+.Punsch {
+  -webkit-transform: rotate(270deg);
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.marquee {
+  width: 63%;
+}
+
+.lastline {
+  width: 18.5%;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
