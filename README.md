@@ -28,7 +28,7 @@ Objektens attribut är följande:
 Attribut | Förklaring
 ------------ | -------------
 name | "Ovvenamn" om sådant existerar. Namnet personen är känd som i studentkretsar.
-irlName | Det tråkiga namnet personen använder hos myndigheter. **Wannabeuppdrag:** fyll i samtliga!
+irlName | Det tråkiga namnet personen använder hos myndigheter. **Wannabeuppdrag:** fyll i samtliga **EFTER** att ni har fått godkännande av sagd person att publisera deras namn!
 inaugurationLocation | Vilket lärosäte personen rockades under. Alltså inte vilken plats personen råkade befinna sig på då det skedde.
 inaugurationYear | Året personen rockades,
 bio | En biografisk text. Pluspoäng om den är charmig eller rolig på något sätt!
