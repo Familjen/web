@@ -46,3 +46,4 @@ bio | En biografisk text. Pluspoäng om den är charmig eller rolig på något s
 **Wannabes** är endast tillåtna i `wannabe`-branchen.
 
 ## Tack för din hjälp, kamrat!
+Bagge sux
