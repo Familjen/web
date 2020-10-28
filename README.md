@@ -40,8 +40,7 @@ bio | En biografisk text. Pluspoäng om den är charmig eller rolig på något s
 
 ### Branch-strategi
 
-`master` är kopplad till en CI/CD-pipeline och varje commit i den deployas till produktion per automatik, så arbeta inte i den utan använd er av `development`.
-`wannabe` rebase:as in i `development`, `development` in i `master`.
+Allt innehåll i `master` publiceras automatiskt via github pages. Arbeta med saker i separata grenar och öppna en pull request när du närmar dig något som kan granskas för att inkluderas i `master`.
 
 **Wannabes** är endast tillåtna i `wannabe`-branchen.
 
