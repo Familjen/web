@@ -412,5 +412,29 @@
         "inaugurationLocation": "Halmstad",
         "inaugurationYear": "2020",
         "bio": ""
+    },
+    
+    {
+        "name": "Schlafen",
+        "irlName": "",
+        "inaugurationLocation": "Karlskrona",
+        "inaugurationYear": "2020",
+        "bio": ""
+    },
+    
+    {
+        "name": "Panter",
+        "irlName": "",
+        "inaugurationLocation": "Karlskrona",
+        "inaugurationYear": "2020",
+        "bio": ""
+    },
+    
+    {
+        "name": "Triss",
+        "irlName": "",
+        "inaugurationLocation": "Karlskrona",
+        "inaugurationYear": "2021",
+        "bio": ""
     }
 ]
