@@ -40,7 +40,7 @@ bio | En biografisk text. Pluspoäng om den är charmig eller rolig på något s
 
 ### Repouppsättning
 
-I detta repo finns lite gott och blandat, både gammalt och nytt. Detta kan leda till en del förvirring, så här kommer en snabb genomgång.
+I detta kodförråd finns lite gott och blandat, både gammalt och nytt. Detta kan leda till en del förvirring, så här kommer en snabb genomgång.
 
 Mapp/Fil | Förklaring
 -------- | ----------
