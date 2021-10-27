@@ -40,17 +40,17 @@ bio | En biografisk text. Pluspoäng om den är charmig eller rolig på något s
 
 ### Repouppsättning
 
-I detta repo finns lite gott och blandad, både gammalt och nytt. Detta kan leda till en del förvirring, så här kommer en snabb genomgång.
+I detta repo finns lite gott och blandat, både gammalt och nytt. Detta kan leda till en del förvirring, så här kommer en snabb genomgång.
 
 Mapp/Fil | Förklaring
 -------- | ----------
-CNAME | Denna fil används av github för att veta under vilken domän sidan ska publiseras
+CNAME | Denna fil används av github för att veta under vilken domän sidan ska publiceras
 assets/ | Här lägger du filer som du vill komma åt på förstasidan på familjen.su
 index.html | Förstasidan på familjen.su
 kk/ | Arkiv av en äldre pik mot KK, koden är isolerad till denna mappen
-kraefta/ | Detta är mappen där nya kraephtsidor publiceras. Skapa en fil med årtal som namn (ex 2021.html) och sen en mapp för året där alla assets för året läggs
-members.json | Medlemslista i json format, se kapitlet om "Listan" åvan
-punsch.txt | Det heliga dokumentet med familjens punsch-recept
+kraefta/ | Detta är mappen där nya kraephtsidor publiceras. Skapa en fil med årtal som namn (ex 2021.html) och sen en mapp för året där alla assets för året läggs. Se även kapitlet om kraepht-sida nedan.
+members.json | Medlemslista i json format, se kapitlet om "Listan" ovan
+punsch.txt | Det heliga dokumentet med Familjens punsch-recept
 script.js | Diverse javascript som används i rotens index.html
 snfh.txt | Spelregler för leken Som Narvik Fast Hemma
 style.css | CSS för rotens index.html
