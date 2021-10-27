@@ -45,8 +45,8 @@ I detta repo finns lite gott och blandad, både gammalt och nytt. Detta kan leda
 Mapp/Fil | Förklaring
 -------- | ----------
 CNAME | Denna fil används av github för att veta under vilken domän sidan ska publiseras
-assets/ | Här lägger du filer som du vill komma åt i den nya sidan (t.ex. index.html)
-index.html | Förstasidan på familjen.su, även kallad "den nya sidan"
+assets/ | Här lägger du filer som du vill komma åt på förstasidan på familjen.su
+index.html | Förstasidan på familjen.su
 kk/ | Arkiv av en äldre pik mot KK, koden är isolerad till denna mappen
 kraefta/ | Detta är mappen där nya kraephtsidor publiceras. Skapa en fil med årtal som namn (ex 2021.html) och sen en mapp för året där alla assets för året läggs
 members.json | Medlemslista i json format, se kapitlet om "Listan" åvan
