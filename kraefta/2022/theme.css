@@ -1,10 +1,10 @@
 body {
-    background-image: url("2022/gif/speedy.gif");
+    background-image: url("gif/speedy.gif");
     /* background-color: greenyellow;
     background-repeat: no-repeat;
     background-size: 2000px 900px; */
     background-size: 320px 200px;
-    cursor: url('2022/cursor/cursor.cur'), auto;
+    cursor: url('cursor/cursor.cur'), auto;
 }
 
 .Rubrik {
@@ -64,7 +64,7 @@ body {
 .egg:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
-    cursor: url(2022/cursor/runner.cur),auto;
+    cursor: url(cursor/runner.cur),auto;
 }
 
 .Wordle {    
