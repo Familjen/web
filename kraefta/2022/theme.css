@@ -1,0 +1,345 @@
+body {
+    background-image: url("gif/speedy.gif");
+    /* background-color: greenyellow;
+    background-repeat: no-repeat;
+    background-size: 2000px 900px; */
+    background-size: 320px 200px;
+    cursor: url('cursor/cursor.cur'), auto;
+}
+
+.Rubrik {
+    position: absolute;
+    text-align: center;
+    font-size: 100px;
+    left: 10px;
+    top: 150px;
+    z-index: -1;
+    color: rgb(0, 0, 255)
+}
+
+.Rubrik:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.kraeftaCorona {
+    position: absolute;
+    left: 10px;
+    top: 1000px;
+    z-index: -1;
+}
+
+.undertext{
+    margin-top: -75px;
+    text-align: center;
+}
+
+.undertext:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.kommentar {
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    top: 1500px;
+    z-index: -1;
+    color: #fffb00
+}
+
+.kommentar:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+.egg {
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    z-index: -1;
+}
+
+.egg:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    cursor: url(cursor/runner.cur),auto;
+}
+
+.Wordle {    
+    position: absolute;
+    left: 10px;
+    top: 1680px;
+    z-index: -1;
+}
+
+.Worldle:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+.jesus {    
+    position: absolute;
+    left: 790px;
+    top: 2700px;
+    z-index: -1;
+}
+
+.virus1 {
+    position: absolute;
+    font-size: 200px;
+    left: 730px;
+    top: 1550px;
+    z-index: -1;
+    color: rgb(255, 0, 255)
+}
+
+.virus1:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.virus2 {
+    position: absolute;
+    color: rgb(0, 238, 255);
+    font-size: 50px;
+    left: 730px;
+    top: 2100px;
+    z-index: -1;
+}
+
+.lobster1 {
+    position: absolute;
+    left: 0px;
+    top: 2500px;
+    z-index: -1;
+    height: auto;
+    max-width: 50%;
+}
+
+.lobster1:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.did {
+    font-size: 1px;
+    position: absolute;
+    left: 100px;
+    top: 2430px;
+    z-index: -1;
+}
+
+.did:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.time {
+    position: absolute;
+    font-size: 235px;
+    left: 960px;
+    top: 800px;
+    z-index: -1;
+    animation: colorRotate 0.5s linear 0s infinite;
+}
+
+.time:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    
+}
+
+.var {
+    position: absolute;
+    font-size: 70px;
+    left: 960px;
+    top: 1200px;
+    z-index: -1;
+    /* animation: colorRotate 0.5s linear 0s infinite; */
+}
+
+.var:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    
+}
+
+.thomas {
+    position: absolute;
+    color: rgb(0, 255, 0);
+    font-size: 50px;
+    left: 800px;
+    top: 3300px;
+    z-index: -1;
+    font-family: monospace;
+    animation: colorRotate 1s linear 0s infinite;
+}
+
+.wow2 {
+    position: absolute;
+    font-size: 30px;
+    left: 560px;
+    top: 180px;
+    z-index: -1;
+    animation: colorRotate 0.1s linear 0s infinite;
+}
+
+.dance {
+    position: absolute;
+    left: 90px;
+    top: 3200px;
+    z-index: -1;
+    height: auto;
+    max-width: 100%;
+}
+
+.hello {
+    position: absolute;
+    left: 90px;
+    top: 3550px;
+    z-index: -1;
+    height: auto;
+    max-width: 100%;
+}
+
+.implobster {
+    position: absolute;
+    left: 500px;
+    top: 3650px;
+    z-index: -1;
+    height: auto;
+    max-width: 100%;
+}
+
+.imp {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    left: 350px;
+    top: 3800px;
+    z-index: -1;
+}
+
+.imp2 {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    left: 350px;
+    top: 3850px;
+    z-index: -1;
+}
+
+.seizure {
+    position: absolute;
+    left: 550px;
+    top: 3000px;
+    z-index: -1;
+    height: auto;
+    max-width: 100%;
+}
+
+.shaky {
+    position: absolute;
+    left: 900px;
+    top: 3600px;
+    z-index: -1;
+    height: auto;
+    max-width: 100%;
+}
+  
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.date {
+    background-color: #000000;
+    padding: 85px;
+}
+
+span {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #ffffff;
+    font-size: 124px;
+    letter-spacing: 8px;
+
+}
+  
+span::before {
+    content: "2022.08.19";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 2px,
+      white 2px,
+      white 4px
+    );
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+}
+  
+span::after {
+    content: "2022.08.19";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 2px,
+      white 2px,
+      white 4px
+    );
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+}
+  
+span:hover:before {
+    top: 10px;
+    left: 10px;
+}
+  
+span:hover:after {
+    top: -10px;
+    left: -10px;
+} 
