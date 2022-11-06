@@ -452,5 +452,21 @@
         "inaugurationLocation": "Karlskrona",
         "inaugurationYear": "2021",
         "bio": ""
+    },
+    
+     {
+        "name": "Hävdes",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2022",
+        "bio": ""
+    },
+    
+     {
+        "name": "StøryTell",
+        "irlName": "",
+        "inaugurationLocation": "Karlskrona",
+        "inaugurationYear": "2022",
+        "bio": ""
     }
 ]
