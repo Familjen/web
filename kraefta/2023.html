@@ -138,7 +138,7 @@
     }
 
     .history-tab {
-      background-image: url('chat.png');
+      background-image: url('/kraefta/2023/chat.png');
       background-repeat: no-repeat;
       background-position: left center;
       padding-left: 20px;
@@ -187,7 +187,7 @@
       userMessage.className = "chat-message user-message";
       userMessage.innerHTML = `
         <div class="user-icon">
-          <img src="familjenlogga.svg" alt="User Profile Picture">
+          <img src="/kraefta/2023/familjenlogga.svg" alt="User Profile Picture">
         </div>
         <div class="user-bubble">
           <p>${message}</p>
@@ -257,7 +257,7 @@ function handleAssistantResponse() {
       const assistantBubble = document.createElement("div");
       assistantBubble.className = "assistant-bubble";
       const assistantLogo = document.createElement("img");
-      assistantLogo.src = "KraephtGPT_logo.jpg";
+      assistantLogo.src = "/kraefta/2023/KraephtGPT_logo.jpg";
       assistantLogo.alt = "KraephtGPT Logo";
       assistantLogo.className = "assistant-logo";
       const assistantTextContainer = document.createElement("div");
@@ -292,7 +292,7 @@ function handleAssistantResponse() {
       const memeContainer = document.createElement("div");
       memeContainer.className = "meme-container";
       const memeImage = document.createElement("img");
-      memeImage.src = randomMeme;
+      memeImage.src = `/kraefta/2023/${randomMeme}`;
       memeImage.alt = "Random Meme";
       memeImage.className = "meme-image";
 
@@ -317,6 +317,7 @@ function displayRandomKraeftaPicture() {
     pictureContainer.className = "picture-container";
     const pictureImage = document.createElement("img");
     pictureImage.src = randomPicture;
+    pictureImage.src = `/kraefta/2023/${randomPicture}`;
     pictureImage.alt = "Random Kraefta Picture";
     pictureImage.className = "picture-image";
 
