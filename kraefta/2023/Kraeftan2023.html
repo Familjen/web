@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom ChatGPT</title>
+  <style>
+    body {
+      background-color: #606060;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      background-color: #202020;
+      color: #ffffff;
+      padding: 20px;
+      flex: 0 0 300px;
+      max-width: 300px;
+    }
+
+    .chat-container {
+      background-color: #606060;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: 100%;
+      margin-right: 20px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .chat-message {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .user-message {
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 10px;
+      color: #333333;
+      max-width: 70%;
+      word-wrap: break-word;
+    }
+
+    .user-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #b3daff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      color: #ffffff;
+    }
+
+    .user-icon img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .assistant-message {
+      background-color: #a0a0a0;
+      border-radius: 5px;
+      padding: 10px;
+      color: #333333;
+      max-width: 70%;
+      word-wrap: break-word;
+    }
+
+    .assistant-icon {
+      width: 30px;
+      height: 30px;
+      background-color: #e6e6e6;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      color: #333333;
+    }
+
+    .assistant-logo {
+      max-width: 30px;
+      max-height: 30px;
+      margin-right: 10px;
+    }
+
+    .assistant-message-container {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .assistant-text {
+      flex: 1;
+    }
+
+    .input-container {
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .meme-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .meme-image {
+      max-width: 100%;
+      max-height: 400px;
+      border-radius: 5px;
+    }
+
+    .history-tab {
+      background-image: url('chat.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 20px;
+      background-size: 16px 16px;
+      list-style: none;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2 style="color: #ffffff;">Conversation History</h2>
+      <ul id="conversation-history">
+        <li class="history-tab">Kommer kräftan vara 2023?</li>
+        <li class="history-tab">Varför finns wannabes?</li>
+        <li class="history-tab">hur många wannabes krävs det för att byta en glödlampa?</li>
+        <li class="history-tab">Vem är Thomas Sörenssen?</li>
+        <li class="history-tab">Skriv "Hjälp"</li>
+        <li class="history-tab">Varför finns kraeftan?"</li>
+      </ul>
+    </div>
+    <div class="chat-container">
+      <div id="chat-log"></div>
+      <div class="input-container">
+        <input id="user-input" type="text" placeholder="Your answer...">
+        <input id="submit-btn" type="submit" value="Send">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to handle user input
+    function handleUserInput() {
+      const userInput = document.getElementById("user-input").value.trim();
+      if (userInput !== "") {
+        displayUserMessage(userInput);
+        document.getElementById("user-input").value = "";
+      }
+    }
+
+    // Function to display user message in the chat log
+    function displayUserMessage(message) {
+      const chatLog = document.getElementById("chat-log");
+      const userMessage = document.createElement("div");
+      userMessage.className = "chat-message user-message";
+      userMessage.innerHTML = `
+        <div class="user-icon">
+          <img src="familjenlogga.svg" alt="User Profile Picture">
+        </div>
+        <div class="user-bubble">
+          <p>${message}</p>
+        </div>
+      `;
+      chatLog.appendChild(userMessage);
+    }
+
+// Function to handle assistant response
+function handleAssistantResponse() {
+  // Get user's answer from the input field
+  const userAnswer = document.getElementById("user-input").value.trim();
+  if (userAnswer !== "") {
+    // Display user's answer
+    displayUserMessage(userAnswer);
+
+    // Clear input field
+    document.getElementById("user-input").value = "";
+
+    // Check if user wants to see a meme
+    if (userAnswer.toLowerCase() === "meme") {
+      displayRandomMeme();
+    } else if (/\bnär\b/i.test(userAnswer)) {
+      displayAssistantMessageWithTypingEffect("Kräftan kommer vara den 18 augusti 2023, be there or get frånvaro.");
+    } else if (/\bplats\b/i.test(userAnswer)) {
+      displayAssistantMessageWithTypingEffect("Kräftan kommer vara på plattan utanför c-huset");
+    } else if (/\bvart\b/i.test(userAnswer)) {
+      displayAssistantMessageWithTypingEffect("Kräftan kommer vara på plattan utanför c-huset");
+    } else if (/\bfamiljen\b/i.test(userAnswer)) {
+      displayAssistantMessageWithTypingEffect("Familjen är en så kallad 'kvasiförening' som grundades i Ronneby år 2006 av studenter vid Blekinge Tekniska Högskola. Sedan dess har de flyttat med högskolan till Karlskrona & även etablerat sig i Halmstad. Ni känner igen dem på deras skinande vita rockar & deras förkärlek till punsch. Deras aspiranter kallas Wannabes och dem känner ni igen på deras allt mindre vita tröjor. På de flesta torsdagar under terminen serverar Familjen ärtsoppa & de välkomnar ert sällskap!");
+    } else if (userAnswer.toLowerCase() === "kraefta") {
+      displayRandomKraeftaPicture();
+    } else if (userAnswer.toLowerCase() === "punch") {
+      displayAssistantMessageWithTypingEffect("Ja tack!");
+    } else if (userAnswer.toLowerCase() === "wannabes") {
+      displayAssistantMessageWithTypingEffect("USCH!");
+    } else if (/\btid\b/i.test(userAnswer)) {
+      displayAssistantMessageWithTypingEffect("Kräftan kommer vara 18:00");
+    } else if (userAnswer.toLowerCase() === "hur?") {
+      displayAssistantMessageWithTypingEffect("Intag av kraephtor och alkoholhaltig dryck i valfri form och hög mängd");
+    } else if (userAnswer.toLowerCase() === "varför?") {
+      displayAssistantMessageWithTypingEffect("Kul? Fylla? Hotel? Trivago?");
+    } else {
+      // Customize assistant's response based on user's answer
+      let assistantResponse = "";
+      if (userAnswer.toLowerCase().includes("hjälp")) {
+        assistantResponse = "Fråga när Kraeftan är, Fråga om plats, Skriv meme, Skriv kraefta, eller om du är förvirrad kan du även fråga Vem Thomas Sörenssen är";
+      } else if (/\bThomas Sörenssen\b/i.test(userAnswer)) {
+        assistantResponse = "https://sv.wikipedia.org/wiki/Thomas_S%C3%B8rensen";
+      } else {
+        assistantResponse = "Förlåt, förstod inte riktigt vad du menade, testa att skriv hjälp för mer info";
+      }
+
+      // Display assistant's response with letter-by-letter typing effect
+      displayAssistantMessageWithTypingEffect(assistantResponse);
+    }
+  }
+}
+
+
+
+    // Function to display assistant message in the chat log with letter-by-letter typing effect
+    function displayAssistantMessageWithTypingEffect(message) {
+      const chatLog = document.getElementById("chat-log");
+      const assistantMessage = document.createElement("div");
+      assistantMessage.className = "chat-message assistant-message";
+      const assistantBubble = document.createElement("div");
+      assistantBubble.className = "assistant-bubble";
+      const assistantLogo = document.createElement("img");
+      assistantLogo.src = "KraephtGPT_logo.jpg";
+      assistantLogo.alt = "KraephtGPT Logo";
+      assistantLogo.className = "assistant-logo";
+      const assistantTextContainer = document.createElement("div");
+      assistantTextContainer.className = "assistant-message-container";
+      const assistantText = document.createElement("p");
+      assistantText.className = "assistant-text";
+
+      let i = 0;
+      const typingInterval = setInterval(() => {
+        if (i < message.length) {
+          assistantText.innerHTML += message.charAt(i);
+          i++;
+        } else {
+          clearInterval(typingInterval);
+          chatLog.scrollTop = chatLog.scrollHeight;
+        }
+      }, 50);
+
+      assistantTextContainer.appendChild(assistantLogo);
+      assistantTextContainer.appendChild(assistantText);
+      assistantBubble.appendChild(assistantTextContainer);
+      assistantMessage.appendChild(assistantBubble);
+      chatLog.appendChild(assistantMessage);
+    }
+
+    // Function to display a random meme
+    function displayRandomMeme() {
+      const memes = ["meme1.jpg", "meme2.jpg", "meme3.jpg", "meme4.jpg", "meme5.jpg","meme6.jpg", "meme7.jpg", "meme8.jpg", "meme9.jpg", "meme10.jpg", "meme11.jpg", "meme12.jpg", "meme13.jpg", "meme14.jpg", "meme15.jpg","meme16.jpg", "meme17.jpg", "meme18.jpg"];
+      const randomMeme = memes[Math.floor(Math.random() * memes.length)];
+
+      const chatLog = document.getElementById("chat-log");
+      const memeContainer = document.createElement("div");
+      memeContainer.className = "meme-container";
+      const memeImage = document.createElement("img");
+      memeImage.src = randomMeme;
+      memeImage.alt = "Random Meme";
+      memeImage.className = "meme-image";
+
+      memeContainer.appendChild(memeImage);
+      chatLog.appendChild(memeContainer);
+
+      chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+    // Function to display a random Kraefta picture
+function displayRandomKraeftaPicture() {
+  const pictures = ["kraefta1.jpg", "kraefta2.jpg", "kraefta3.jpg","kraefta4.jpg", "kraefta5.jpg", "kraefta6.jpg"];
+  const randomPicture = pictures[Math.floor(Math.random() * pictures.length)];
+
+  const chatLog = document.getElementById("chat-log");
+
+  // Check if user's input only contains the keyword "kraefta"
+  const userAnswer = document.getElementById("user-input").value.trim();
+  const words = userAnswer.split(" ");
+  if (words.length === 1) {
+    const pictureContainer = document.createElement("div");
+    pictureContainer.className = "picture-container";
+    const pictureImage = document.createElement("img");
+    pictureImage.src = randomPicture;
+    pictureImage.alt = "Random Kraefta Picture";
+    pictureImage.className = "picture-image";
+
+    pictureContainer.appendChild(pictureImage);
+    chatLog.appendChild(pictureContainer);
+
+    chatLog.scrollTop = chatLog.scrollHeight;
+  }
+}
+
+    // Attach event listener to submit button
+    document.getElementById("submit-btn").addEventListener("click", function (event) {
+      event.preventDefault();
+      handleAssistantResponse();
+    });
+
+    // Attach event listener to Enter key press
+    document.getElementById("user-input").addEventListener("keyup", function (event) {
+      event.preventDefault();
+      if (event.keyCode === 13) {
+        handleAssistantResponse();
+      }
+    });
+  </script>
+</body>
+</html>
