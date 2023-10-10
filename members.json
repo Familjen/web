@@ -439,6 +439,14 @@
     },
 
     {
+        "name": "Skalle-per",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2021",
+        "bio": "Trotts hårväxt så löser denna rock alltid på något sätt att dyka upp när man minst anar det"
+    },
+
+    {
         "name": "Deeler",
         "irlName": "",
         "inaugurationLocation": "Karlskrona",
@@ -526,18 +534,25 @@
         "bio": "Pappas pojke kan man tro, men han är sin egna man. Med sina idéer får han verksamheten att rulla. \n\nI Halmstads <i>Punsch-Off</i> 2023 hamna denna rocks punsch på 1a plats."
     },
     {
+        "name": "Jåker",
+        "irlName": "",
+        "inaugurationLocation": "Karlskrona",
+        "inaugurationYear": "2023",
+        "bio": ""
+      },
+    {
         "name": "KHora",
         "irlName": "",
         "inaugurationLocation": "Halmstad",
         "inaugurationYear": "2023",
         "bio": "Bäst i köket kan man tycka, sleven i hand blir soppan alltid redig!"
     },
-    {
-        "name": "Skalle-per",
+      {
+        "name": "Itällic",
         "irlName": "",
-        "inaugurationLocation": "Halmstad",
-        "inaugurationYear": "2021",
-        "bio": "Trotts hårväxt så löser denna rock alltid på något sätt att dyka upp när man minst anar det"
-    },
+        "inaugurationLocation": "Karlskrona",
+        "inaugurationYear": "2023",
+        "bio": ""
+      }
     
 ]
