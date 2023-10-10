@@ -475,5 +475,69 @@
         "inaugurationLocation": "Karlskrona",
         "inaugurationYear": "2022",
         "bio": ""
-    }
+    },
+    {
+        "name": "El Taco",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2022",
+        "bio": "Rocken som alltid levererar i köket. \n\nSenast sedd vid sin egna finsoppa, om upphittad DMa <i>@familjenhalmstad</i>."
+    },
+    {
+        "name": "Bohwser",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2022",
+        "bio": "Springer denna rock inte efter Peach så är det cider!"
+    },
+    {
+        "name": "Offside",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2023",
+        "bio": "Är rocken här eller där? Springer alltid runt så man aldrig ver vart han är. \n\nTrots många bollar i luften så löser Offside det mesta. \n\nI Halmstads <i>Punsch-Off</i> 2023 hamna denna rocks punsch på 2a plats."
+    },
+    {
+        "name": "Giljotinen",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2023",
+        "bio": "Slaktar många öl, halshugger rocken Kir eller är det bara Gnällart som tyckte extra mycket om fransk historia då namnet gavs?"
+    },
+    {
+        "name": "Für",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2023",
+        "bio": "Alltid på lyset, skiner alltid med en en punsch i handen. Fråga om <i>InfoCest</i> Är verkligt."
+    },
+    {
+        "name": "Houdini",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2023",
+        "bio": "Vad har han under sin rock? Ingen vet, kan det vara öhl, cider eller bara punsch?  \n\nI Halmstads <i>Punsch-Off</i> 2023 hamna denna rocks punsch på 1a plats."
+    },
+    {
+        "name": "Hinken",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2023",
+        "bio": "Pappas pojke kan man tro, men han är sin egna man. Med sina idéer får han verksamheten att rulla. \n\nI Halmstads <i>Punsch-Off</i> 2023 hamna denna rocks punsch på 1a plats."
+    },
+    {
+        "name": "KHora",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2023",
+        "bio": "Bäst i köket kan man tycka, sleven i hand blir soppan alltid redig!"
+    },
+    {
+        "name": "Skalle-per",
+        "irlName": "",
+        "inaugurationLocation": "Halmstad",
+        "inaugurationYear": "2021",
+        "bio": "Trotts hårväxt så löser denna rock alltid på något sätt att dyka upp när man minst anar det"
+    },
+    
 ]
