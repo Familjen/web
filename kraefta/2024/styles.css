@@ -1,0 +1,152 @@
+/* Grundläggande stilar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', sans-serif;
+    overflow-x: hidden; /* Förhindra horisontell scrollning */
+    animation: blinkBackground 5s infinite; /* Applicera bakgrundsanimeringen */
+}
+
+/* Hero-sektionen med bakgrundsbild */
+.hero {
+    background-image: url('bakgrund.jpg'); /* Ange din bilds namn och sökväg */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; /* Full höjd på viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative; /* För att placera flytande bilder relativt till hero-sektionen */
+}
+
+/* Innehåll inom hero-sektionen */
+.hero-content {
+    max-width: 80%;
+}
+
+/* Stil för rubriken */
+.headline {
+    font-family: 'Lobster', cursive;
+    font-size: 10rem;
+    font-weight: bold;
+    animation: blinkText 1s infinite;
+}
+
+/* Stil för detaljer */
+.details {
+    font-size: 4.5rem;
+    margin-top: 10px;
+    animation: blinkText 1s infinite;
+}
+
+/* Styling för huvudsektionen */
+main {
+    padding: 20px;
+}
+
+/* Stil för informationssektionen */
+.info {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+/* Flexbox-stil för att placera bild och text bredvid varandra */
+.info-content {
+    display: flex;
+    align-items: center; /* Vertikal centrering */
+    gap: 20px; /* Mellanrum mellan bild och text */
+}
+
+/* Stil för bilden i informationssektionen */
+.info-image {
+    flex: 1; /* Gör bilden responsiv */
+    max-width: 400px; /* Maximal bredd på bilden */
+    height: auto; /* Håll bildens proportioner */
+    border-radius: 8px; /* Rundade hörn på bilden */
+}
+
+/* Stil för textinnehållet */
+.text-content {
+    flex: 2; /* Gör textinnehållet större än bilden */
+}
+
+/* Stil för flytande bilder */
+.floating-image {
+    position: absolute;
+    width: 100px;
+    animation: floatAndMove 10s infinite linear;
+}
+
+/* Specifika animationer för varje bild */
+.crayfish {
+    animation-duration: 12s;
+}
+
+.disco-ball {
+    animation-duration: 15s;
+}
+
+.flaggpunsch {
+    animation-duration: 18s;
+}
+
+/* Gemensam animation för flytande och rörelse */
+@keyframes floatAndMove {
+    0% {
+        transform: translate(0, 0);
+        top: 10vh; /* Startposition högre upp */
+        left: 10vw;
+    }
+    25% {
+        transform: translate(50vw, 10vh);
+        top: 20vh;
+        left: 60vw;
+    }
+    50% {
+        transform: translate(0, 20vh);
+        top: 30vh;
+        left: 30vw;
+    }
+    75% {
+        transform: translate(-50vw, 10vh);
+        top: 40vh;
+        left: 10vw;
+    }
+    100% {
+        transform: translate(0, 0);
+        top: 10vh; /* Slutposition som matchar startpositionen */
+        left: 10vw;
+    }
+}
+
+/* Animation för blinkande text */
+@keyframes blinkText {
+    0% { color: #f00; }
+    25% { color: #0f0; }
+    50% { color: #00f; }
+    75% { color: #ff0; }
+    100% { color: #f00; }
+}
+
+/* Animation för blinkande bakgrund */
+@keyframes blinkBackground {
+    0% { background-color: #ff0000; }
+    25% { background-color: #00ff00; }
+    50% { background-color: #0000ff; }
+    75% { background-color: #ffff00; }
+    100% { background-color: #ff0000; }
+}
+
+/* Stil för foten */
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
