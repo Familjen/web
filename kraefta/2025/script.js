@@ -2,7 +2,7 @@ const zoomImage = document.querySelector('.zoom-image');
 const button = document.querySelector('.center-button');
 const cover = document.querySelector('.cover');
 const audio = document.createElement("audio");
-audio.src = "peter.mp3";
+audio.src = "2025/filename.mp3";
 audio.volume = 0.1;
 audio.loop = false;
 
