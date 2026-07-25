@@ -1,0 +1,632 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Minecraft-web";
+
+  background-color: blue;
+
+  background-image: url("dessert_miecraft.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  letter-spacing: 3px;
+  transform: translateY(-200px);
+  transform: translateX(-10px); 
+  
+  text-shadow: 
+    0 0 10px white,
+    0 0 50px green;
+
+  animation: puls 0.1s infinite ease-in-out;
+
+  
+}
+
+@keyframes puls {
+  0% {
+    transform: translateY(-200px) scale(1);
+  }
+
+  50% {
+    transform: translateY(-200px) scale(1.1);
+  }
+
+  100% {
+    transform: translateY(-200px) scale(1);
+  }
+}
+
+
+h2 {
+  font-size: 25px;
+  color: rgb(216, 63, 63);
+  letter-spacing: 3px;
+  
+
+  animation: flytta 2s infinite alternate ease-in-out;
+}
+
+@keyframes flytta {
+  from {
+    transform: translateX(-500px);
+  }
+
+  to {
+    transform: translateX(500px);
+  }
+}
+
+.left-right {
+  font-size: 25px;
+  color: rgb(112, 192, 153);
+  letter-spacing: 3px;
+  transform: translateY(700); 
+  transform: translateX(-360); 
+
+  animation: hoppa 2s infinite alternate ease-in-out;
+}
+
+
+
+
+@keyframes hoppa {
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(100px);
+  }
+}
+
+
+.snurra {
+  font-size: 25px;
+  color: orange;
+  letter-spacing: 3px;
+
+  position: absolute;
+  animation: snurra 5s linear infinite;
+}
+
+@keyframes snurra {
+  0% {
+    transform: rotate(0deg) translateX(400px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(400px) rotate(-360deg);
+  }
+}
+
+.tid{
+  font-size: 40px;
+  color: rgb(175, 12, 245);
+  letter-spacing: 3px;
+  animation: tid 5s linear infinite;
+  
+}
+
+@keyframes tid {
+  0% {
+    transform: rotate(0deg) translateX(400px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(400px) rotate(360deg);
+  }
+}
+
+.bild {
+  position: absolute;
+  bottom: -500px;
+  left: 50px;
+  z-index: 1;
+
+  animation: flytta 12s infinite alternate ease-in-out;
+}
+
+
+
+
+.akra {
+  position: absolute;
+  bottom: -1000px;
+  left: 600px;
+  z-index: 2;
+
+  animation: tid 5s linear infinite;
+}
+.akra img {
+  width: 200px;
+}
+.akra img {
+  width: 400px;
+}
+
+.sixseven {
+  position: absolute;
+  bottom: -1000px;
+  left: 600px;
+  z-index: 1;
+
+  animation: tid 10s linear infinite;
+}
+.sixseven img {
+  width: 200px;
+}
+.sixseven img {
+  width: 400px;
+}
+
+
+.tryck {
+  position: absolute;
+  left: 100px;
+  bottom: 300px;
+  color: rgb(7, 7, 7);
+  font-size: 30px;
+  font-family: "Minecraft-web";
+}
+
+.jaggi {
+  position: absolute;
+  bottom: -350px;
+  left: 700px;
+  z-index: 1;
+
+  animation: puls 1s infinite ease-in-out;
+}
+.jaggi img {
+  width: 300px;
+}
+.jaggi img {
+  width: 400px;
+}
+
+
+
+.kraftis {
+  position: absolute;
+  bottom: -500px;
+  left: 200px;
+  z-index: 1;
+
+  animation: puls 1s infinite ease-in-out;
+}
+.kraftis img {
+  width: 300px;
+}
+.kraftis img {
+  width: 400px;
+}
+
+.dough {
+  position: absolute;
+  bottom: -400px;
+  left: 0px;
+  z-index: 1;
+
+  animation: hoppa 2s infinite alternate ease-in-out;
+}
+.dough img {
+  width: 300px;
+}
+.dough img {
+  width: 400px;
+}
+
+.moatoa {
+  position: absolute;
+  bottom: -1400px;
+  left: 1000px;
+  z-index: 1;
+
+  animation: hoppa 2s infinite alternate ease-in-out;
+}
+.moatoa img {
+  width: 300px;
+}
+.moatoa img {
+  width: 400px;
+}
+
+
+.yolo {
+  position: absolute;
+  bottom: -100px;
+  left: 1350px;
+  z-index: 1;
+
+  animation: flytta 2s infinite alternate ease-in-out;
+  
+}
+.yolo img {
+  width: 300px;
+}
+.yolo img {
+  width: 400px;
+}
+.rindom {
+  position: absolute;
+  z-index: 1;
+  animation: studsa 6s infinite linear;
+}
+
+.rindom img {
+  width: 200px;
+}
+
+.filla {
+  position: absolute;
+  z-index: 1;
+  animation: studsa 10s infinite linear;
+}
+
+.filla img {
+  width: 200px;
+}
+
+@keyframes studsa {
+  0% {
+    left: 5%;
+    top: 10%;
+  }
+
+  15% {
+    left: 80%;
+    top: 25%;
+  }
+
+  30% {
+    left: 60%;
+    top: 75%;
+  }
+
+  45% {
+    left: 15%;
+    top: 60%;
+  }
+
+  60% {
+    left: 40%;
+    top: 20%;
+  }
+
+  75% {
+    left: 85%;
+    top: 80%;
+  }
+
+  90% {
+    left: 20%;
+    top: 40%;
+  }
+
+  100% {
+    left: 5%;
+    top: 10%;
+  }
+}
+
+.interaktiv {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  z-index: 50;
+}
+
+.interaktiv input {
+  display: none;
+}
+
+.interaktiv img {
+  width: 200px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#klickbild:checked + label img {
+  transform: scale(1.5) rotate(360deg);
+}
+
+.Soren {
+  position: absolute;
+  bottom: -650px;
+  left: 1300px;
+  z-index: 1;
+
+  animation: puls 1s infinite ease-in-out;
+}
+.Soren img {
+  width: 300px;
+}
+.Soren img {
+  width: 400px;
+}
+
+
+#reward {
+  display: none;
+}
+
+.knapp {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+
+  background-color: green;
+  color: white;
+
+  font-family: "Minecraft-web";
+  font-size: 25px;
+
+  padding: 15px 30px;
+  border: 3px solid white;
+
+  cursor: pointer;
+}
+
+.knapp:hover {
+  background-color: limegreen;
+  transform: scale(1.1);
+}
+
+.Skrolla {
+  position: absolute;
+  left: 1050px;
+  bottom: 50px;
+  color: rgb(255, 0, 0);
+  font-size: 100px;
+  font-family: "Minecraft-web";
+  transform: rotate(90deg);
+}
+
+.SkrollaText {
+  rotate: 180deg;
+}
+
+.Kraftbad67  {
+  position: absolute;
+  z-index: 1;
+  animation: studsa 6s infinite linear;
+}
+
+.Kraftbad67 img {
+  width: 200px;
+}
+
+.Kraftanpaftan67 {
+  position: absolute;
+  bottom: -700px;
+  left: 500px;
+  z-index: 0;
+
+  
+}
+.Kraftanpaftan67 img {
+  width: 300px;
+}
+.Kraftanpaftan67 img {
+  width: 200px;
+}
+
+.flip {
+  position: absolute;
+  bottom: -850px;
+  left: 0px;
+  z-index: 1;
+
+  animation: hoppa 2s infinite alternate ease-in-out;
+}
+.flip img {
+  width: 300px;
+}
+.flip img {
+  width: 300px;
+}
+
+.dancingqueen {
+  position: absolute;
+  z-index: 1;
+  animation: studsa 5s infinite linear;
+}
+
+.dansingqueen img {
+  width: 100px;
+}
+
+.fettcoolbrud {
+  position: absolute;
+  bottom: -1400px;
+  left: 400px;
+  z-index: 1;
+
+  animation: hoppa 2s infinite alternate ease-in-out;
+}
+.fettcoolbrud img {
+  width: 300px;
+}
+.fettcoolbrud img {
+  width: 400px;
+}
+
+.kraftanarnajs {
+  position: absolute;
+  bottom: -1700px;
+  left: 200px;
+  z-index: 2;
+
+  animation: tid 5s linear infinite;
+}
+.kraftanarnajs img {
+  width: 200px;
+}
+.kraftanarnajs img {
+  width: 400px;
+}
+
+.kraftankaftanwannabe67 {
+  position: absolute;
+  bottom: --1600px;
+  left: 400px;
+  z-index: 1;
+
+  animation: hoppa 2s infinite alternate ease-in-out;
+}
+.kraftankaftanwannabe67 img {
+  width: 300px;
+}
+.kraftankaftanwannabe67 img {
+  width: 400px;
+}
+
+.minecraft67 {
+  position: absolute;
+  bottom: -1600px;
+  left: 100px;
+  z-index: 1;
+
+  animation: hoppa 2s infinite alternate ease-in-out;
+}
+.minecraft67 img {
+  width: 300px;
+}
+.minecraft67 img {
+  width: 400px;
+}
+
+.yesyes67 {
+  position: absolute;
+  bottom: -1900px;
+  left: 400px;
+  z-index: 2;
+
+  animation: tid 10s linear infinite;
+}
+.yesyes67 img {
+  width: 200px;
+}
+.yesyes67 img {
+  width: 400px;
+}
+
+.okidokifraftir67 {
+  position: absolute;
+  bottom: -1900px;
+  left: 200px;
+  z-index: 1;
+
+  animation: hoppa 2s infinite alternate ease-in-out;
+}
+.okidokifraftir67 img {
+  width: 300px;
+}
+.okidokifraftir67 img {
+  width: 400px;
+}
+
+.fettcoolkraftir67 {
+  position: absolute;
+  bottom: -1900px;
+  left: 700px;
+  z-index: 2;
+
+  animation: tid 7s linear infinite;
+}
+.fettcoolkraftir67 img {
+  width: 300px;
+}
+.fettcoolkraftir67 img {
+  width: 400px;
+}
+
+.korvkrafta67 {
+  position: absolute;
+  bottom: -2000px;
+  left: 800px;
+  z-index: 1;
+
+  animation: hoppa 2s infinite alternate ease-in-out;
+}
+.korvkrafta67 img {
+  width: 300px;
+}
+.korvkrafta67 img {
+  width: 400px;
+}
+
+.hjarnkrafta67 {
+  position: absolute;
+  bottom: -2350px;
+  left: 900px;
+  z-index: 1;
+
+  animation: puls 1s infinite ease-in-out;
+}
+.hjarnkrafta67 {
+  width: 300px;
+}
+.hjarnkrafta67 {
+  width: 400px;
+}
+
+.olochkraftaarsant67 {
+  position: absolute;
+  bottom: -1900px;
+  left: 500px;
+  z-index: 2;
+
+  animation: tid 4s linear infinite;
+}
+.olochkraftaarsant67 img {
+  width: 600px;
+}
+.olochkraftaarsant67 img {
+  width: 600px;
+}
+
+.vannakanna {
+  position: absolute;
+  bottom: -2750px;
+  left: 200px;
+  z-index: 1;
+
+  animation: puls 1s infinite ease-in-out;
+}
+.vannakanna {
+  width: 200px;
+}
+.vannakanna {
+  width: 200px;
+}
+
+.Textsoren {
+  position: absolute;
+  left: 100px;
+  bottom: -2600px;
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+  font-family: "Minecraft-web";
+}
+
+.meny {
+  position: relative;
+  z-index: 37;
+}
+
+
+@font-face {
+  font-family: "Minecraft-web";
+  src: url("https://cdn.jsdelivr.net/gh/IdreesInc/Minecraft-Font@main/Minecraft.otf") format("opentype");
+  font-display: swap;
+}
